@@ -1,0 +1,100 @@
+body{
+    box-sizing: border-box;
+    background-color: #1f1f1f1f;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    box-shadow: 0 4px 3px -2px gray;
+}
+
+section{
+    display: flex;
+    height: 90vh;
+}
+
+button{
+    border: none;
+    padding: 18px 34px;
+    font-size: 18px;
+    border-radius: 28px;
+    background: #e2b215cf;
+}
+
+h1{
+    margin: 0;
+    font-weight: lighter;
+}
+
+h2{
+    margin: 0;
+    font-size: 70px;
+}
+
+p{
+    font-size: 28px;
+}
+
+.firstimg{
+    height: 90vh;
+    object-fit: cover;
+}
+
+div{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /*margin: 100px;*/
+}
+
+.margin-100{
+    margin: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+    margin: 0px 300px;
+}
+
+.section3{
+    background: #e2b215cf;
+}
+
+.monito{
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+/*
+h1{
+    margin: 0;
+}
+*/
+/*
+.first-section{
+    display: flex;
+    height: 100vh;
+}
+    */
+/*
+.first-section div{
+    flex: 1;
+}
+*/
+
+/*
+.banner{
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor 
+}
+*/
