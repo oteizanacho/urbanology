@@ -14,6 +14,7 @@ header{
 section{
     display: flex;
     height: 90vh;
+    border: 2px solid red;
 }
 
 button{
@@ -34,7 +35,16 @@ h2{
     font-size: 70px;
 }
 
+h3{
+    margin: 0;
+}
+
+h4{
+    margin: 0;
+}
+
 p{
+    margin: 0;
     font-size: 28px;
 }
 
@@ -44,22 +54,29 @@ p{
 }
 
 div{
+    width: 50%;
+}
+
+/*
+div{
     text-align: start;
     display: flex;
     flex-direction: column;
     width: 50%;
-    /*margin: 100px;*/
+    align-items: start;
+    justify-content: center;
 }
+*/
 
 .margin-100{
     margin: 100px;
-    display: flex;
     align-items: start;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .section2{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -71,30 +88,24 @@ div{
     background: #e2b215cf;
 }
 
-.monito{
+.secondimg{
     margin: 50px auto;
     border-radius: 20px;
 }
 
-/*
-h1{
-    margin: 0;
-}
-*/
-/*
-.first-section{
+.section4{
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
 }
-    */
-/*
-.first-section div{
-    flex: 1;
-}
-*/
 
-/*
-.banner{
-    max-width: 100%; /* La imagen nunca será más ancha que su contenedor 
+.card-container{
+    display: flex;
 }
-*/
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
