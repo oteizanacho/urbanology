@@ -14,7 +14,7 @@ header{
 section{
     display: flex;
     height: 90vh;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 button{
@@ -86,7 +86,8 @@ div{
     align-items: center;
     justify-content: center;
     /* margin: 0 auto; */
-    margin: 0px 300px;
+    padding: 0px 300px;
+    background: whitesmoke;
 }
 
 .section3{
@@ -136,20 +137,29 @@ div{
 .section8{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .section8 img{
-    width: 500px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
 }
 
 .price-card-container{
     display: flex;
+    text-align: left;
+    margin: 30px 100px;
 }
 
 .price-card{
-
+    border: 1px solid #1f1f1f1f;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 20px;
 }
 
 .section9{
