@@ -37,10 +37,14 @@ h2{
 
 h3{
     margin: 0;
+    font-weight: lighter;
+    font-size: 24px;
 }
 
 h4{
     margin: 0;
+    font-weight: lighter;
+    font-size: 20px;
 }
 
 p{
@@ -51,9 +55,10 @@ p{
 .firstimg{
     height: 90vh;
     object-fit: cover;
+    max-width: 100%;
 }
 
-div{
+.section1 div{
     width: 50%;
 }
 
@@ -69,7 +74,7 @@ div{
 */
 
 .margin-100{
-    margin: 100px;
+    margin: 100px 70px;
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -94,18 +99,55 @@ div{
 }
 
 .section4{
-    display: flex;
     flex-direction: column;
-    align-items: center;
     height: auto;
+    align-items: center;
 }
 
 .card-container{
     display: flex;
+    width: 50%;
+    padding: 25px 0px;
 }
 
 .card{
+   /* display: flex;
+    flex-direction: column;
+    padding: 20px;*/
+    padding: 0px 20px;
+}
+
+.card img{
+   width: 500px;
+   height: 300px;
+   object-fit: cover;
+   border-radius: 28px;
+}
+
+.section7 div{
+    margin: 100px;
+}
+
+.section7 img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.section8{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+}
+
+.section8 img{
+    width: 500px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.price-card-container{
+    display: flex;
+}
+
+.price-card{
+    
 }
