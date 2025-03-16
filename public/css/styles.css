@@ -149,5 +149,37 @@ div{
 }
 
 .price-card{
-    
+
+}
+
+.section9{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: #e2b215cf;
+    padding: 80px 200px;
+}
+
+.section10{
+
+}
+
+.section10 div{
+    background-color: #1f1f1f1f;
+    margin: 150px 200px;
+    border-radius: 18px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: space-evenly;
+}
+
+footer{
+    background: #e2b215cf;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
