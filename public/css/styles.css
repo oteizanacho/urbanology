@@ -2,6 +2,14 @@ body{
     box-sizing: border-box;
     background-color: #1f1f1f1f;
     margin: 0;
+    /*
+    #ded8da - Gris claro
+    #b7a9b5 - Lila grisáceo
+    #6f6475 - Morado oscuro
+    #3a343a - Gris oscuro
+    #181516 - Negro casi absoluto
+    #efb6d2 - Rosa pastel
+*/
 }
 
 header{
