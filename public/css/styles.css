@@ -58,6 +58,10 @@ p{
     max-width: 100%;
 }
 
+.section1{
+    height: 90vh;
+}
+
 .section1 div{
     width: 50%;
 }
