@@ -23,6 +23,7 @@ section{
     display: flex;
     height: auto;
     /*border: 2px solid red;*/
+    min-height: 90vh;
 }
 
 button{
@@ -61,9 +62,6 @@ h1, h2, h3, h4, p{
     max-width: 100%;
 }
 
-.section1{
-    height: 90vh;
-}
 
 .section1 div{
     width: 50%;
@@ -95,7 +93,6 @@ div{
     /* margin: 0 auto; */
     padding: 0px 300px;
     background: whitesmoke;
-    height: 90vh;
 }
 
 .section3{
@@ -153,7 +150,6 @@ div{
     justify-content: center;
     text-align: center;
     background: whitesmoke;
-    height: 90vh;
 }
 
 .section8 img{
