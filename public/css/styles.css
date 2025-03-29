@@ -210,3 +210,21 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 15px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #25D366;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button i {
+    font-size: 25px;
+}
+
