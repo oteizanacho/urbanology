@@ -231,3 +231,125 @@ footer{
 }
 
 */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.blanco{
+    color: #f3f3f3;
+}
+
+.negro{
+    color: #1d1d1d;
+}
+
+.moradoA{
+    color: #222959;
+}
+
+.moradoB{
+    color: #894474;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 12px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 24px;
+    font-size: 18px;
+}
+
+.section1{
+    min-height: 70vh;
+    text-align: center;
+}
+
+.section2{
+    min-height: 70vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section2 h1{
+    color: white;
+    font-size: 46px;
+
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.section3 h1{
+    margin: 0;
+    padding: 22px 0px;
+    background-color: aqua;
+    padding-left: 28px;
+    color: white;
+    font-size: 36px;
+}
+
+.section3 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 28px;
+}
+
+.section3 h3{
+    background-color: aquamarine;
+    margin-bottom: 16px;
+}
+
+.servicios{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 22px 0px;
+}
+
+.servicios div{
+    max-width: 25%;
+}
+
+.servicios h2{
+    margin-top: 10px;
+}
+
+button{
+    border: none;
+    padding: 14px 22px;
+    background-color: violet;
+    color: white;
+    font-weight: bold;
+}
