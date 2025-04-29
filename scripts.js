@@ -1,3 +1,3 @@
-document.getElementById('comenzar').addEventListener('click', e => {
+/*document.getElementById('comenzar').addEventListener('click', e => {
     console.log('clicked')
-})
+})*/
