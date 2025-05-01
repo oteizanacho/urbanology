@@ -111,6 +111,7 @@ header a{
     background-size: cover;
     background-image: url("servicios.png");
     height: 80vh;
+    align-items: center;
 }
 
 .section3 h1{
@@ -125,6 +126,7 @@ header a{
     text-decoration: none;
     font-weight: bold;
     /*padding-left: 28px;*/
+    color: black;
 }
 
 .section3 h3{
@@ -134,7 +136,7 @@ header a{
 
 .servicios{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     margin: 22px 0px;
 }
