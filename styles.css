@@ -61,6 +61,7 @@ header a{
 }
 
 .section2{
+    background-image: url("acercade.png");
     min-height: 70vh;
     background-color: #894474;
     /*display: flex;
@@ -70,6 +71,7 @@ header a{
     display: flex;
     align-items: center;
     justify-content:space-around ;
+    background-size: cover;
 }
 
 .section2 p{
@@ -88,12 +90,15 @@ header a{
     display: flex;
     flex-direction: column;
     margin-bottom: 26px;
+    background-size: cover;
+    background-image: url("servicios.png");
+    height: 80vh;
 }
 
 .section3 h1{
     margin: 0;
     padding: 28px;
-    background-color: aqua;
+    background-color: #894474;
     color: white;
     font-size: 36px;
 }
@@ -127,7 +132,7 @@ header a{
 button{
     border: none;
     padding: 14px 22px;
-    background-color: violet;
+    background-color: #222959;
     color: white;
     font-weight: bold;
 }
@@ -144,7 +149,10 @@ button{
 
 footer{
     display: flex;
-    align-items: center;
     justify-content: space-around;
     min-height: 40vh;
+}
+
+footer p{
+    margin: 12px 0px;
 }
