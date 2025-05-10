@@ -44,6 +44,15 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 48px 12px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header.visible{
+    opacity: 1;
 }
 
 header nav{
@@ -69,9 +78,11 @@ header a{
 }
 
 .section1{
-    min-height: 50vh;
-    text-align: center;
+    min-height: 100vh;
     font-size: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section2{
