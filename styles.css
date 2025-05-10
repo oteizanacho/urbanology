@@ -252,16 +252,61 @@ header a{
 
 
 
-
+/*--------FOOTER---------*/
 
 
 footer{
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 90vh;
+    align-items: center;
+}
+footer span{
+    font-size: 68px;
+}
+
+footer h3{
+    font-size: 32px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
     justify-content: space-around;
-    min-height: 40vh;
+    height: 20vh;
     align-items: center;
 }
 
-footer p{
-    margin: 12px 0px;
+footer h4{
+    margin-bottom: 8px;
+    font-weight: 500;
 }
+
+footer p{
+    margin-bottom: 8px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+}
+
+form button{
+    padding: 8px 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/*-----------------*/
