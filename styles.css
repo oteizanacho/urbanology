@@ -89,6 +89,15 @@ header a{
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+.focus2{
+    background-color: #f3f3f3;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 14px 22px;
+    font-weight: bold;
+    border: none;
+}
+
 .redes{
     font-size: 26px;
     margin: 0px 10px 10px 0px;
@@ -151,57 +160,76 @@ header a{
 
 
 /*-----------------*/
-.section3{
-    display: flex;
-    flex-direction: column;
+.section-servicios{
     background-size: cover;
     background-image: url("servicios.png");
-    height: 80vh;
-    align-items: center;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.section3 h1{
-    margin: 0;
-    padding: 28px;
-    background-color: #894474;
+.section-servicios h1{
+    font-size: 48px;
+    background-color: #222959;
     color: white;
-    font-size: 36px;
-}
-
-.section3 h3{
-    background-color: aquamarine;
-    margin-bottom: 16px;
+    font-weight: bold;
+    padding: 28px 0px;
+    max-height: 20%;
+    display: flex;
+    justify-content: center;
+    width: 52%;
 }
 
 .servicios{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 22px 0px;
+    height: 75%;
+    justify-content: space-evenly;
 }
 
-.servicios div{
-    max-width: 25%;
+.servicios-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 55%;
 }
 
-.servicios h2{
-    margin-top: 10px;
+.servicios-container h2{
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
-button{
-    border: none;
-    padding: 14px 22px;
-    background-color: #222959;
-    color: white;
+.servicios-container p{
+    max-width: 50%;
+    margin-bottom: 24px;
+}
+
+.servicios-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.proximo-desarrollo h3{
+    background-color: white;
+    padding: 2px 6px;
     font-weight: bold;
 }
 
-button:hover {
-    background-color: #444b7c;
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
+.proximo-desarrollo{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: space-evenly;
+    font-size: 28px;
+    align-items: center;
 }
+
+
+/*-----------------*/
+
+
 
 .section4{
     min-height: 60vh;
@@ -219,6 +247,13 @@ button:hover {
     background-color: #f3f3f3;
     opacity: 0.5;
 }
+
+
+
+
+
+
+
 
 footer{
     display: flex;
