@@ -2,14 +2,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-}
-
-.montserrat {
-    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
+/*-----TIPOGRAFIA-----*/
 
 .noto-serif {
     font-family: "Noto Serif", serif;
@@ -18,31 +15,31 @@
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
+/*------------------*/
+
+/*-----COLORES-----*/
 
 .blanco{
     color: #f3f3f3;
 }
-
 .negro{
     color: #1d1d1d;
 }
-
 .moradoA{
     color: #222959;
 }
-
 .moradoB{
     color: #894474;
 }
+/*------------------*/
 
-.focus{
-    background-color: #222959;
-    color: #f3f3f3;
-}
+/*---------HEADER---------*/
 
 header{
+    font-size: 18px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     padding: 48px 12px;
     position: fixed;
     top: 0;
@@ -61,27 +58,40 @@ header.visible{
     transform: translateY(0);
 }
 
+header span{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
 header nav{
-    margin-left: 130px;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
 }
 
 header a{
     text-decoration: none;
     color: black;
+    padding: 8px 12px;
     font-weight: 500;
-    font-size: 18px;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    /*box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
-    padding: 10px;
-    margin-left: 24px;
+}
+/*-----------------*/
+
+.shadow{
+    text-shadow: 0px 0px 2px gray;
 }
 
-.ubspan{
+
+.focus{
+    background-color: #222959;
+    color: #f3f3f3;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+.size18{
     font-size: 18px;
-    text-shadow: 0px 0px 1px gray;
 }
 
 .section2 h1, .section2 a, .section2 i {
