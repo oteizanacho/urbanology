@@ -68,10 +68,10 @@ header.visible{
     transform: translateY(0);
 }
 
-header span{
+#home{
     display: flex;
     width: 22%;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 header nav{
