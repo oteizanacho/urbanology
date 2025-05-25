@@ -293,6 +293,18 @@ form input{
         flex-direction: column;
         align-items: end;
     }
+
+    #footer-atencion{
+        padding-bottom: 16px;
+    }    
+
+    .redes-container{
+        padding-top: 16px;
+    }
+
+    #newsletter{
+        padding: 12px 0;
+    }
 }
 
 @media (min-width: 787px){
