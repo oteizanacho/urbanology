@@ -15,110 +15,108 @@
 </head>
 <body>
     <header>
-        <a href="#hero" id="home"><span class="noto-serif">urbanology</span></a>
-        <nav id="navbar">
-            <a href="#acercade" target="">Acerca de</a> <!--clase focus: remarca el boton con un fondo violeta-->
-            <a href="#servicios" target="">Servicios</a>
-            <a href="#blog" target="">Blog</a>
-            <a href="#contacto" target="">Contacto</a>
-        </nav>
+        <div id="header-container">
+            <a href="#hero" class="home"><span class="noto-serif">urbanology</span></a>
+            <button id="hamburguesa"><i class="fas fa-bars"></i></button>
+            <nav id="navbar">
+                <button id="cerrar"><i class="fas fa-window-close"></i></button>
+                <a href="#acercade" class="nav-opcion">Acerca de</a>
+                <a href="#servicios" class="nav-opcion">Servicios</a>
+                <a href="#blog" class="nav-opcion">Blog</a>
+                <a href="#contacto" class="nav-opcion">Contacto</a>
+            </nav>
+        </div>
     </header>
-    <section class="hero" id="hero">
+    <section id="hero">
         <span class="noto-serif">urbanology</span>
     </section>
-    <section class="acercade" id="acercade">
-        <div class="acercade-info-container">
-            <h1>Arquitectura <br>que impulsa negocios.  <br> ▶</h1>
-            <div class="redes-container">
-                <div class="redes-iconos">
-                    <a href="https://www.instagram.com/" target="_blank"><i class="redes fab fa-instagram-square blanco"></i></a>
-                    <a href="https://wa.me/" target="_blank"><i class="redes fab fa-whatsapp-square blanco"></i></a>
-                </div>
-                <a href="/" class="blanco web">urbanology.com.ar</a>
-            </div>
-        </div>
-        <div class="acercade-extra-info">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates culpa, omnis asperiores quae neque qui autem nobis illum ex sint deserunt? Est delectus repellendus sint ab perferendis, ipsum praesentium!</p>
-        </div>
-    </section>
-    <h1 id="titulo-servicios">Nuestros servicios</h1>
-    <section class="section-servicios" id="servicios">
-        <div class="servicios">
-            <div class="servicios-container">
-                <div class="servicios-lista">
-                    <div>
-                        <h2>Asesorias</h2>
-                        <p>Estrategias de inversion en bienes raices y potencialidades del sitio.</p>
-                    </div>
-                    <div>
-                        <h2>Factibilidad</h2>
-                        <p>Definicion de usos y programas arquitectonicos segun las normativas del sitio.</p>
-                    </div>
-                    <div>
-                        <h2>Ante proyecto</h2>
-                        <p>Idea rectora, imagenes y memoria del desarrollo. Pre disenio arqutiectonico e ingenierias.</p>
-                    </div>
-                    <div>   
-                        <h2>Activacion comercial</h2>
-                        <p>Plan de ventas y difusion del desarrollo a partir de eventos de escala urbana.</p>
-                    </div>
-                </div>
+    <section id="acercade">
+        <div id="acercade-container">
+            <div class="acercade-info">
+                <h1>Arquitectura <br>que impulsa negocios.  <br> ▶</h1>
                 <div class="redes-container">
-                <div class="redes-iconos">
-                    <a href="https://www.instagram.com/" target="_blank"><i class="redes fab fa-instagram-square negro"></i></a>
-                    <a href="https://wa.me/" target="_blank"><i class="redes fab fa-whatsapp-square negro"></i></a>
-                </div>
-                <a href="/" class="negro web">urbanology.com.ar</a>
-            </div>
-            </div>
-            <div class="servicios-titulo">
-                <button class="focus2">Reservar Consulta</button>
-                <div class="proximo-desarrollo">
-                    <h3>▶ Comenza a</h3>
-                    <h3>planificar tu</h3>
-                    <h3>proximo desarrollo.</h3>
+                    <div class="redes-iconos">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                    <a href="/">urbanology.com.ar</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="blog" id="blog">
-        <div class="blog-left-container">
-            <h1>Arquitectura <br>que impulsa negocios.  <br> ▶</h1>
+    <div id="titulo-servicios-container">
+        <h1 id="titulo-servicios" style="width: 80%; margin-top: 12px;" >Nuestros Servicios</h1>
+    </div>
+    <section id="servicios">
+        <div class="servicios-container">
+            <div class="servicios-lista">
+                <div>
+                    <h2>Asesorías</h2>
+                    <p>Estrategias de inversión en bienes raíces y potencialidades del sitio.</p>
+                </div>
+                <div>
+                    <h2>Factibilidad</h2>
+                    <p>Definición de usos y programas arquitectónicos segun las normativas del sitio.</p>
+                </div>
+                <div>
+                    <h2>Ante proyecto</h2>
+                    <p>Idea rectora, imagenes y memoria del desarrollo. Pre-diseño arqutiectónico e ingenierías.</p>
+                </div>
+                <div>   
+                    <h2>Activación comercial</h2>
+                    <p>Plan de ventas y difusión del desarrollo a partir de eventos de escala urbana.</p>
+                </div>
+            </div>
+            <button id="reservar">Reservar consulta</button>
             <div class="redes-container">
                 <div class="redes-iconos">
-                    <a href="https://www.instagram.com/" target="_blank"><i class="redes fab fa-instagram-square blanco"></i></a>
-                    <a href="https://wa.me/" target="_blank"><i class="redes fab fa-whatsapp-square blanco"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" id="negro"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://wa.me/" target="_blank" id="negro"><i class="fab fa-whatsapp-square"></i></a>
                 </div>
-                <a href="/" class="blanco web">urbanology.com.ar</a>
+                <a href="/" id="negro">urbanology.com.ar</a>
             </div>
         </div>
-        <div class="blog-right-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates culpa, omnis asperiores quae neque qui autem nobis illum ex sint deserunt? Est delectus repellendus sint ab perferendis, ipsum praesentium!</p>
+    </section>
+    <section id="blog">
+        <div class="blog-container">
+            <div class="blog-info">
+                <h1>Arquitectura <br>que impulsa negocios.  <br> ▶</h1>
+                <div class="redes-container">
+                    <div class="redes-iconos">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                    <a href="/">urbanology.com.ar</a>
+                </div>
+            </div>
         </div>
     </section>
     <footer id="contacto">
-        <span class="noto-serif">urbanology</span>
-        <h3>Arquitectura que impulsa negocios.</h3>
-        <div class="footer-content">
-            <div class="footer-form">
-                <h4>SUSCRIBITE AL NEWSLETTERS</h4>
-                <form action="">
-                    <input type="text" placeholder="Email">
-                    <label for=""></label>
-                    <button class="focus">Enviar</button>
-                </form>
-            </div>
-            <div class="footer-mail">
-                <h4>ATENCION AL CLIENTE</h4>
-                <p>urbanology7@gmail.com</p>
-                <p>+54 9 011 xxx-xxx(solo WhatsApp)</p>
-            </div>
-            <div class="redes-container">
-                <div class="redes-iconos">
-                    <a href="https://www.instagram.com/" target="_blank"><i class="redes fab fa-instagram-square negro"></i></a>
-                    <a href="https://wa.me/" target="_blank"><i class="redes fab fa-whatsapp-square negro"></i></a>
+        <div class="footer-container">
+            <span class="noto-serif">urbanology</span>
+            <h3>Arquitectura que impulsa negocios.</h3>
+            <div id="footer-contacto">
+                <div id="footer-atencion">
+                    <h4>Atención al cliente</h4>
+                    <p>urbanology7@gmail.com</p>
+                    <p>+54 9 011 xxx-xxxx</p>
+                    <p>Solo Whatsapp</p>
                 </div>
-                <a href="/" class="negro web">urbanology.com.ar</a>
+                <div>
+                    <h4>Suscribite al newsletter</h4>
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Email">
+                        <label for=""></label>
+                        <button id="form-btn">Enviar</button>
+                    </form>
+                </div>
+                <div class="redes-container">
+                    <div class="redes-iconos">
+                        <a href="https://www.instagram.com/" target="_blank" id="redes-footer"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://wa.me/" target="_blank" id="redes-footer"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
+                    <a href="/" id="redes-footer">urbanology.com.ar</a>
+                </div>
             </div>
         </div>
     </footer>

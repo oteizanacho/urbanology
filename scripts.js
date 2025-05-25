@@ -1,40 +1,46 @@
-/*
-window.onload = (e) => {
-    console.log('hola')
-}*/
+const btn = document.getElementById("hamburguesa");
+const menu = document.getElementById("navbar");
+const cerrar = document.getElementById("cerrar");
+const header = document.querySelector("header");
+const links = document.querySelectorAll(".nav-opcion");
+const secciones = document.querySelectorAll("section, footer");
 
-window.addEventListener("scroll", function (){
-    const header = document.querySelector("header")
-    if(window.scrollY > 0) {
-        header.classList.add("visible")
-    } else {
-        header.classList.remove("visible")
-    }
-})
-/*
-window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
-    if (window.scrollY > 0) {
-      header.classList.add("visible");
-    }
+// Menú hamburguesa
+btn.addEventListener("click", () => {
+  btn.style.display = "none";
+  cerrar.style.display = "block";
+  menu.style.display = "flex";
+  menu.style.flexDirection = "column";
+  menu.style.alignItems = "end";
 });
-*/
 
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("#navbar a");
+cerrar.addEventListener("click", () => {
+  menu.style.display = "none";
+  btn.style.display = "block";
+});
 
-  function updateActiveLink() {
-    let index = sections.length;
-
-    while (--index >= 0 && window.scrollY + 100 < sections[index].offsetTop) {}
-
-    navLinks.forEach(link => link.classList.remove("active"));
-    if (index >= 0) {
-      const id = sections[index].id;
-      const activeLink = document.querySelector(`#navbar a[href="#${id}"]`);
-      if (activeLink) activeLink.classList.add("active");
-    }
+// Mostrar header al hacer scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("visible");
+  } else {
+    header.classList.remove("visible");
   }
 
-  window.addEventListener("scroll", updateActiveLink);
-  window.addEventListener("load", updateActiveLink);
+  // Scrollspy
+  secciones.forEach(seccion => {
+    const top = seccion.offsetTop - 100;
+    const bottom = top + seccion.offsetHeight;
+    const scroll = window.scrollY;
+
+    if (scroll >= top && scroll < bottom) {
+      const id = seccion.getAttribute("id");
+      links.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${id}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+});
