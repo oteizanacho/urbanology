@@ -3,7 +3,6 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
     font-style: normal;
     text-shadow: 0px 0px 1px black;
 }
@@ -28,11 +27,20 @@ body{
     font-variation-settings:"wdth" 100;
 }
 
+.container{
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    max-height: 96vh;
+}
+
+/***********************        HEADER      ************************/
+
 #header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 96%;
 }
 
 header{
@@ -80,16 +88,6 @@ header.visible{
     color: #1d1d1d;
 }
 
-#hero{
-    min-height: 100vh;
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3f3f3;
-}
-
-
 #hamburguesa{
     border: none;
     background: none;
@@ -112,20 +110,32 @@ header.visible{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#acercade{
-    /*background-image: url("acercade.png");*/
+/************************************************************/
+
+
+section{
     min-height: 100vh;
-    /*background-size: contain;
-    background-position: 500px bottom;
-    background-repeat: no-repeat;*/
     display: flex;
     justify-content: center;
 }
 
-#acercade-container{
-    display: flex;
-    width: 80%;
+.white-bkg{
+    background-color: #f3f3f3;
 }
+
+/***********************     HERO   **********************/
+
+#hero{
+    align-items: center;
+    font-size: 4rem;
+    
+
+}
+
+/************************************************************/
+
+
+/**********************     ACERCA DE    ****************************/
 
 .acercade-info{
     display: flex;
@@ -133,12 +143,7 @@ header.visible{
     justify-content: space-around;
 }
 
-.acercade-info h1, #titulo-servicios, .blog-info h1{
-    font-size: 3rem;
-    color: #f3f3f3;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px black;
-}
+
 
 .redes-container{
     font-size: 22px;
@@ -148,54 +153,54 @@ header.visible{
     color: #f3f3f3;
     text-decoration: none;
     /*text-shadow: 2px 2px 4px black;*/
+    font-size: 1.5rem;
 }
 
 .redes-iconos a{
-    font-size: 30px;
+    font-size: 2rem;
     color: #f3f3f3;
+    margin-right: 1rem;
 }
+
+/************************************************************/
+
+
+/*************************      SERVICIOS    ************************/
+
+#titulo-servicios{
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+}
+
 
 #titulo-servicios-container{
     display: flex;
     justify-content: center;
-    padding-bottom: 14px;
-}
 
-#servicios{
-    background-color: #f3f3f3;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
 }
 
 .servicios-container{
-    width: 80%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
-h2{
-    font-size: 2.3rem;
-    font-weight: bold;
+.servicios-lista{
+    max-width: 60%;
 }
 
-p{
-    font-size: 1.4rem;
-}
 
 .servicios-lista div{
     padding-top: 14px;
 }
 
-#reservar{
+#reservar-btn{
     font-size: 1.4rem;
     font-weight: bold;
     color: #f3f3f3;
     background-color: #222959;
     border: none;
     display: flex;
-    width: 70%;
+    width: 25%;
     padding: 10px 14px;
     align-items: center;
     justify-content: center;
@@ -206,16 +211,10 @@ p{
     color: #1d1d1d;
 }
 
-#blog{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-}
+/************************************************************/
 
-.blog-container{
-    display: flex;
-    width: 80%;
-}
+
+/**************************    BLOG     *************************/
 
 .blog-info{
     display: flex;
@@ -223,33 +222,31 @@ p{
     justify-content: space-around;
 }
 
-#contacto{
-    min-height: 100vh;
-    background-color: #f3f3f3;
+/************************************************************/
+
+
+/*************************   FOOTER   ********************/
+
+footer{
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     text-align: center;
+    align-items: end;
 }
 
 .footer-container{
     display: flex;
-    width: 80%;
+    width: 96%;
     flex-direction: column;
     justify-content: space-around;
+    min-height: 80vh;
 }
 
 .footer-container span{
     font-size: 4rem;
 }
 
-h3{
-    font-size: 2.2rem;
-}
-
-h4{
-    font-size: 1.9rem;
-    padding-bottom: 4px;
-}
 
 #redes-footer{
     color: #1d1d1d;
@@ -278,6 +275,11 @@ form input{
     font-size: 18px;
 }
 
+/************************************************************/
+
+
+
+/************************     MEDIA QUERIS      ************************/
 
 @media (max-width: 786px){
     #hamburguesa{
@@ -372,7 +374,6 @@ form input{
         display: flex;
         width: 100%;
         justify-content: space-between;
-        align-items: center;
     }
 
     p{
@@ -385,3 +386,57 @@ form input{
 
     
 }
+
+
+/*************************    h1  ************************/
+
+.acercade-info h1, #titulo-servicios, .blog-info h1{
+    font-size: 4rem;
+    color: #f3f3f3;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+}
+
+/*************************    h2  ************************/
+
+h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+
+/*************************    h3  ************************/
+
+h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+
+/*************************    h4  ************************/
+
+h4{
+    font-size: 1.9rem;
+    padding-bottom: 4px;
+    font-weight: 500;
+}
+
+
+/*************************    p  ************************/
+
+p{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/*
+MOBILE
+
+celu
+
+
+
+
+
+
+*/
