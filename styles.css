@@ -171,6 +171,7 @@ section{
     display: flex;
     width: 96%;
     justify-content: space-between;
+    padding: 2rem 0;
 }
 
 
@@ -203,6 +204,7 @@ section{
     align-items: center;
     justify-content: center;
     text-shadow: 1px 1px 2px black;
+    margin: 3rem 0;
 }
 
 #negro{
@@ -359,6 +361,7 @@ form input{
         background-image: url("servicios.png");
         background-size: cover;
         background-position: center;
+        padding: 3rem 0;
     }
 
     #blog{
