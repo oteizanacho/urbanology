@@ -67,7 +67,7 @@ header.visible{
 
 #navbar{
     display: flex;
-    width: 44%;
+    width: 30%;
     justify-content: space-between;
 }
 
@@ -106,13 +106,13 @@ header.visible{
     font-size: 1.6rem;
     display: none;
 }
-
+/*
 .nav-opcion:hover{
     background-color: #222959;
     color: #f3f3f3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+*/
 /************************************************************/
 
 
