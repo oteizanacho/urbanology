@@ -47,8 +47,8 @@ header{
     display: flex;
     justify-content: center;
     background-color: #f3f3f3;
-    /*padding: 48px 0px;*/
-    font-size: 20px;
+    padding: 1rem 0px;
+    /*font-size: 20px;*/
     box-shadow: 0 0px 3px #1d1d1d;
     position: fixed;
     top: 0;
@@ -72,20 +72,23 @@ header.visible{
 }
 
 #navbar a.active{
+    /*
     background-color: #222959;
     color: #f3f3f3;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);*/
+    border-bottom: 1px solid #1d1d1d;
 }
 
 .nav-opcion{
     text-decoration: none;
     color: #1d1d1d;
-    padding: 8px 12px;
+    /*padding: 8px 12px;*/
 }
 
 .home{
     text-decoration: none;
     color: #1d1d1d;
+    font-size: 1.4rem;
 }
 
 #hamburguesa{
