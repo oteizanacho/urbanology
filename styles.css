@@ -47,9 +47,9 @@ header{
     display: flex;
     justify-content: center;
     background-color: #f3f3f3;
-    padding: 48px 0px;
+    /*padding: 48px 0px;*/
     font-size: 20px;
-    box-shadow: 0 2px 5px #1d1d1d;
+    box-shadow: 0 0px 3px #1d1d1d;
     position: fixed;
     top: 0;
     left: 0;
