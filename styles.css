@@ -7,6 +7,18 @@
     text-shadow: 0px 0px 1px black;
 }
 
+html, body {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#hero, #acercade, #servicios, #blog, #contacto{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
 html {
   scroll-behavior: smooth;
 }
