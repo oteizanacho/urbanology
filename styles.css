@@ -160,7 +160,9 @@ section{
     padding: 3rem 1rem 0 1rem;
 }
 
-
+.acercade-info .titulo{
+    padding-top: 7rem;
+}
 
 .redes-container{
     /*font-size: 22px;*/
@@ -255,6 +257,14 @@ section{
     flex-direction: column;
     justify-content: space-between;
     margin-top: 3rem;
+}
+
+#texto-blog{
+    border: 1px solid black;
+    max-width: 25%;
+    height: 50vh;
+    background-color: #f3f3f3;
+    opacity: 0.4;
 }
 
 /************************************************************/
