@@ -105,10 +105,9 @@
                 </div>
                 <div id="newsletter">
                     <h4>Contactános por mail</h4>
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Tu mail">
-                        <label for=""></label>
-                        <button id="form-btn">Enviar</button>
+                    <form action="/send-email" method="POST" id="contact-form">
+                        <input type="email" name="email" placeholder="Tu mail" required>
+                        <button id="form-btn" type="submit">Enviar</button>
                     </form>
                 </div>
                 <div class="redes-container">
