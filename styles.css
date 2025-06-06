@@ -196,7 +196,7 @@ section{
 .servicios-container{
     flex-direction: column;
     padding: 1rem;
-    height: 85vh;
+    height: 80vh;
 }
 
 
@@ -299,6 +299,7 @@ form input{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #servicios{
@@ -331,11 +332,15 @@ form input{
     #footer-atencion{
         padding-bottom: 16px;
     }    
-
+    
     .redes-container{
-        padding-top: 16px;
+        align-items: center;
     }
 
+    #footer-contacto .redes-container{
+        justify-content: center;
+    }
+    
     #newsletter{
         padding: 12px 0;
     }
@@ -387,8 +392,10 @@ form input{
     */
     #servicios{
         background-image: url("servicios.png");
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        width: 100%;
        /* padding: 2rem 1rem 1rem 1rem;*/
     }
 
