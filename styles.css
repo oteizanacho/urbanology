@@ -188,6 +188,7 @@ header a{
 #contacto h3{
     font-size: 1.9rem;
     text-align: center;
+    font-weight: 600;
 }
 
 #contacto h4{
@@ -210,16 +211,13 @@ input{
     padding: 0.5rem;
     background-color: #f3f3f3;
     border-bottom: 1px solid #1d1d1d;
+    border-right: 1px solid #1d1d1d;
 }
 
 footer a{
     color: #1d1d1d;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
-}
-
-#footer-mail-wsp{
-    text-align: center;
 }
 
 /******** MEDIA QUERIS ************/
@@ -234,6 +232,7 @@ footer a{
         display: flex;
         flex-direction: row;
         width: 40%;
+        align-items: center;
     }
 
     .card-container{
@@ -269,6 +268,7 @@ footer a{
         display: flex;
         width: 100%;
         justify-content: space-between;
+        text-align: center;
     }
 }
 /*****************************/
