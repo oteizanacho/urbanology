@@ -273,15 +273,16 @@ footer a{
     }
 
     #titulo{
-        max-width: 30%;
+        /*max-width: 30%;*/
     }
 
     .card-container{
-        
+        justify-content: space-around;
     }
 
     .card{
-        width: 400px;
+        max-width: 35%;
+        
     }
 
     #footer-contactos{
