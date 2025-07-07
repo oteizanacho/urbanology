@@ -176,10 +176,19 @@ header a{
 .blog-text-container{
     background-color: #f3f3f3;
     width: 100%;
-    min-height: 90vh;
+    /*min-height: 90vh;*/
     border-radius: 1rem;
     margin: 5rem 1rem 1rem 1rem;
     padding: 1rem;
+    display: flex;
+    align-items: self-start;
+}
+
+.blog-text-container img{
+    width: 70%;
+    object-fit: contain;
+    border-radius: 1rem;
+    margin-left: 1rem;
 }
 
 #contacto{
