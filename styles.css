@@ -153,6 +153,7 @@ header a{
     /*margin-left: 1rem;*/
     width: 100%;
     height: auto;
+    margin: 1rem 0rem;
 }
 
 .card img{
@@ -163,7 +164,7 @@ header a{
 }
 
 .card div{
-    margin: 0rem 1rem;
+    margin: 0rem 1rem 1rem 1rem;
 }
 
 .card h2{

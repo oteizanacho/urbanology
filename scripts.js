@@ -12,3 +12,13 @@ cerrarBtn.addEventListener("click", () => {
   hamburguesaBtn.style.display = "block"
   navBar.style.display = "none"
 })
+
+/*
+const navigation = [ document.getElementById("acerca-de"), document.getElementById("servicios"), document.getElementById("contacto")]
+
+navigation.forEach(nav => {
+  nav.addEventListener("click", () => {
+    hamburguesaBtn.style.display = "block"
+    navBar.style.display = "none"
+  })
+})*/
