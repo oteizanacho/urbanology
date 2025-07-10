@@ -147,13 +147,10 @@ header a{
     display: flex;
     flex-direction: column;
     /*padding: 1rem;*/
-}
-
-.card{
-    /*margin-left: 1rem;*/
     width: 100%;
     height: auto;
     margin: 1rem 0rem;
+    justify-content: space-between;
 }
 
 .card img{
@@ -169,6 +166,11 @@ header a{
 
 .card h2{
     font-size: 1.8rem;
+    height: 70px;
+}
+
+.card p{
+    height: 60px;
 }
 
 .card button{
@@ -277,7 +279,7 @@ footer a{
         display: flex;
         /*flex-wrap: wrap;
         justify-content: space-between;*/
-        gap: 1rem;
+        gap: 4rem;
         min-height: 42vh;
     }
 
