@@ -57,6 +57,10 @@ nav{
 }
 
 nav a:hover{
+    /*background: #4A314D;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: #f3f3f3;*/
     border-bottom: 1px solid #1d1d1d;
 }
 
