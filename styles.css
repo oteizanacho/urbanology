@@ -20,7 +20,8 @@ html, body {
 }
 
 body{
-    background: linear-gradient(to left, #894474, #222959);
+    /*background: linear-gradient(to left, #894474, #222959);*/
+    background: #4A314D;
 }
 
 .noto-serif {
@@ -96,7 +97,7 @@ header a{
 
 #acerca-de{
     min-height: 100vh;
-    background-image: url("Blog.png");
+    background-image: url("acercadesinedit.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -126,6 +127,7 @@ header a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*background-image: url(acercade.png);*/
 }
 
 #servicios a{
@@ -136,17 +138,28 @@ header a{
 
 .card{
     background-color: #f3f3f3;
-    margin: 1rem 0rem;
+    /*margin: 1rem;*/
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    /*padding: 1rem;*/
+}
+
+.card{
+    /*margin-left: 1rem;*/
+    width: 100%;
+    height: auto;
 }
 
 .card img{
-    height: 200px;
+    height: 12rem;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
+    margin: 1rem;
+}
+
+.card div{
+    margin: 0rem 1rem;
 }
 
 .card h2{
@@ -257,12 +270,14 @@ footer a{
 
     .card-container{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        /*flex-wrap: wrap;
+        justify-content: space-between;*/
+        gap: 1rem;
+        min-height: 42vh;
     }
 
     .card{
-        width: 49%;
+        /*width: 49%;*/
     }
 }
 
@@ -277,12 +292,11 @@ footer a{
     }
 
     .card-container{
-        justify-content: space-around;
+        /*justify-content: space-around;*/
     }
 
     .card{
-        max-width: 35%;
-        
+        /*max-width:40%;*/
     }
 
     #footer-contactos{
