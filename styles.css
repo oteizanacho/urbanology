@@ -21,7 +21,8 @@ html, body {
 
 body{
     /*background: linear-gradient(to left, #894474, #222959);*/
-    background: #4A314D;
+    /*background: #4A314D;*/
+    background-color: #f3f3f3;
 }
 
 .noto-serif {
@@ -99,30 +100,48 @@ header a{
     justify-content: center;
 }
 
+#urbanology{
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
 #acerca-de{
     min-height: 100vh;
-    background-image: url("acercadesinedit.jpeg");
+    /*background-image: url("acercade1.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#acercade::before{
+
 }
 
 #titulo{
-    padding-top: 4rem;
-    max-width: 60%;
-    color: #f3f3f3;
-    font-weight: bold;
+    /*padding-top: 6rem;*/
+    /*max-width: 60%;*/
+    /*color: #f3f3f3;*/
+    /*font-weight: bold;*/
     font-size: 2.7rem;
+    margin: 0 auto;
 }
 
-#acerca-de a{
-    font-size: 1.5rem;
-    color: #f3f3f3;
+.redes-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes-container a{
+    font-size: 1rem;
+    color: #1d1d1d;
     text-decoration: none;
+    margin-right: 2px;
 }
 
 #servicios{
@@ -134,19 +153,66 @@ header a{
     /*background-image: url(acercade.png);*/
 }
 
+.servicios-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios-nav div{
+    width: 70%;
+    background-color: #d9d9d9;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#titulo-servicio{
+    margin-bottom: 1rem;
+}
+
+.flecha{
+    font-size: 2rem;
+
+}
+
+/*
+.blog-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+*/
+.blog-card{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+}
+/*
+.blog-card p{
+    width: 49%;
+}*/
+
+.blog-img{
+    width: 49%;
+    height: 55vh;
+    object-fit: fill;
+    border-radius: 1rem;
+}
+/*
 #servicios a{
     font-size: 1.5rem;
     color: #f3f3f3;
     text-decoration: none;
-}
-
+}*/
+/*
 .card{
     background-color: #f3f3f3;
-    /*margin: 1rem;*/
+    /*margin: 1rem;*
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    /*padding: 1rem;*/
+    /*padding: 1rem;*
     width: 100%;
     height: auto;
     margin: 1rem 0rem;
@@ -156,7 +222,7 @@ header a{
 .card img{
     height: 12rem;
     border-radius: 1rem;
-    /*margin-bottom: 1rem;*/
+    /*margin-bottom: 1rem;*
     margin: 1rem;
 }
 
@@ -172,7 +238,7 @@ header a{
 .card p{
     height: 60px;
 }
-
+*/
 .card button{
     border: none;
     padding: 0.3rem 0.5rem;
@@ -182,26 +248,51 @@ header a{
     border-radius: 1rem;
 }
 
+.card div{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
 .card button:hover{
 
 }
 
 #blog{
-    min-height: 100vh;
+    
+    min-height: 100vh;/*
     display: flex;
     justify-content: center;
+    align-items: center;*/
+    padding: 0 1rem;
+    display: flex;
     align-items: center;
+    
 }
 
 .blog-text-container{
+    /*
     background-color: #f3f3f3;
     width: 100%;
-    /*min-height: 90vh;*/
+    min-height: 90vh;
     border-radius: 1rem;
     margin: 5rem 1rem 1rem 1rem;
     padding: 1rem;
     display: flex;
     align-items: self-start;
+    margin: 0rem 1rem;*/
+    width: 40%;
+}
+
+.blog-text-container h2{
+    padding: 1rem;
+    background-color: #d9d9d9;
+}
+
+.blog-text-container p{
+    padding: 0 1rem 1rem 1rem;
+    background-color: #d9d9d9;
 }
 
 .blog-text-container img{
@@ -213,7 +304,7 @@ header a{
 
 #contacto{
     min-height: 100vh;
-    padding: 5rem 1rem 1rem 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -237,21 +328,49 @@ header a{
     font-weight: 500;
 }
 
+.form-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+form{
+    width: 40%;
+}
+
 form button{
     border: none;
-    box-shadow: 1px 1px #1d1d1d;
-    background-color: #f5f5f5;
+    /*box-shadow: 1px 1px #1d1d1d;*/
+    background-color: #1d1d1d;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    display: block;
+    color: #f3f3f3;
 }
 
 input{
     border: none;
     font-size: 1rem;
     padding: 0.5rem;
-    background-color: #f3f3f3;
+    background-color: #d9d9d9;
+    width: 49%;
+    /*
     border-bottom: 1px solid #1d1d1d;
-    border-right: 1px solid #1d1d1d;
+    border-right: 1px solid #1d1d1d;*/
+}
+
+#input-background{
+    /*background-color: #d9d9d9;*/
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#consulta{
+    width: 100%;
+    background-color: #d9d9d9;
+    height: 12vh;
+    margin-bottom: 1rem;
 }
 
 footer a{
@@ -274,14 +393,14 @@ footer a{
         width: 40%;
         align-items: center;
     }
-
+    /*
     .card-container{
         display: flex;
         /*flex-wrap: wrap;
-        justify-content: space-between;*/
+        justify-content: space-between;*
         gap: 4rem;
         min-height: 42vh;
-    }
+    }*/
 
     .card{
         /*width: 49%;*/
@@ -299,11 +418,19 @@ footer a{
     }
 
     .card-container{
-        /*justify-content: space-around;*/
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 15vh;
     }
 
     .card{
-        /*max-width:40%;*/
+        width: 22%;
+    }
+
+    .card span{
+        font-size: 2rem;
     }
 
     #footer-contactos{
