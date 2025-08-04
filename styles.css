@@ -56,12 +56,16 @@ nav{
 }
 
 nav a:hover{
-    border-bottom: 1px solid #1d1d1d;
+    background-color: #1d1d1d;
+    color: #f3f3f3;
+    padding: 0.5rem 1rem;
+    border: none;
 }
 
 header a{
     text-decoration: none;
     color: #1d1d1d;
+    padding: 0.5rem 1rem;
 }
 
 #home{
@@ -104,7 +108,7 @@ header a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 6rem 1rem 1rem 1rem;
 }
 
 #acercade::before{
@@ -130,7 +134,7 @@ header a{
 
 #servicios{
     min-height: 100vh;
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 6rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -223,7 +227,7 @@ header a{
 
 #contacto{
     min-height: 100vh;
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 6rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -313,7 +317,7 @@ footer a{
 /* ESTILOS DESKTOP */
 @media (min-width: 975px) {
     nav{
-        width: 25%;
+        width: 30%;
     }
 
     #titulo{
