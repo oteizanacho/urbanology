@@ -16,10 +16,6 @@ html, body {
     scroll-snap-stop: always;
 }
 
-body{
-    background-color: #f3f3f3;
-}
-
 .noto-serif {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
@@ -49,7 +45,7 @@ header{
 }
 
 nav a:hover{
-    background-color: #1d1d1d;
+    background-color: #202030;
     color: #f3f3f3;
     padding: 0.5rem 1rem;
     border: none;
@@ -87,7 +83,7 @@ header a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1rem;
+    background-color: #F4F3EE;
 }
 
 .titulo{                           /*   h1   */
@@ -95,7 +91,7 @@ header a{
     margin: 0 auto;
     background-color: #f3f3f3;
     width: 100%;
-    padding: 1rem 0;
+    padding: 6rem 0 1rem 0;
     text-align: center;
 }
 
@@ -107,39 +103,47 @@ header a{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: #d9d9d9;
+    justify-content: space-between;
+    background-color: #202030;
 }
 
 .servicios-nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f3f3f3;
+    background-color: #39304A;
     padding: 1rem 0;
+    gap: 1rem;
+}
+
+#desc-servicio{
+    margin: 0 1rem 1rem 1rem;
 }
 
 .servicios-nav div{
     width: 70%;
-    background-color: #d9d9d9;
+    background-color: #F4F3EE;
     padding: 1rem;
     margin: 1rem;
 }
 
 #titulo-servicio{
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 .flecha{
     font-size: 2rem;
     padding: 0.5rem 1rem;
-
+    background-color: #F4F3EE;
+    border: 1px solid #F4F3EE;
+    border-radius: 2rem;
 }
 
 .flecha:hover{
-    background-color: #1d1d1d;
+    background-color: #202030;
     color: #f3f3f3;
     padding: 0.5rem 1rem;
+    border: 1px solid #F4F3EE;
 }
 
 .blog-card{
@@ -162,7 +166,7 @@ header a{
     min-height: 100vh;
     padding-top: 5rem;
     display: flex;
-    background-color: #d9d9d9;
+    background-color: #39304A;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -174,7 +178,7 @@ header a{
     padding: 1rem 0 1rem 1rem;
 }
 
-#blog a{
+.redes a{
     color: #1d1d1d;
     font-size: 1rem;
     text-decoration: none;
@@ -194,7 +198,7 @@ header a{
 
 .blog-text-container h2{
     padding: 1rem;
-    background-color: #d9d9d9;
+    background-color: #F4F3EE;
 }
 
 .blog-text-container p{
@@ -224,7 +228,8 @@ header a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #d9d9d9;
+    background-color: #202030;
+    color: #f3f3f3;
 }
 
 #contacto span{
@@ -248,7 +253,7 @@ header a{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background-color: #f3f3f3;
+    background-color: #39304A;
     padding: 1rem 0;
 }
 
@@ -259,18 +264,18 @@ form{
 
 form button{
     border: none;
-    background-color: #1d1d1d;
+    background-color: #F4F3EE;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     display: block;
-    color: #f3f3f3;
+    color: #1d1d1d;
 }
 
 input{
     border: none;
     font-size: 1rem;
     padding: 0.5rem;
-    background-color: #d9d9d9;
+    background-color: #F4F3EE;
     width: 49%;
 }
 
@@ -282,7 +287,7 @@ input{
 
 #consulta{
     width: 100%;
-    background-color: #d9d9d9;
+    background-color: #F4F3EE;
     height: 12vh;
     margin-bottom: 1rem;
 }
@@ -315,26 +320,32 @@ footer a{
 
     .card-container{
         display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
         justify-content: space-between;
-        background-color: #f3f3f3;
-        padding: 1rem;
+        background-color: #39304A;
+        padding: 1rem 2rem;
     }
 
     .card:hover {
-        background-color: #d9d9d9;
+        background-color: #F4F3EE;
     }
 
     .card{
         width: 22%;
         padding: 1rem;
+        background-color: #F4F3EE;
+        margin: 1rem;
     }
 
     .card div{
         display: flex;
         gap: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .card p{
+        padding: 1rem;
+        margin: 0 1rem 1rem 1rem;
     }
 
     .card span{
@@ -346,8 +357,15 @@ footer a{
         width: 100%;
         justify-content: space-between;
         text-align: center;
-        background-color: #f3f3f3;
-        padding-top: 1rem;
+        background-color: #39304A;
+        padding: 1rem;
+        color: #f3f3f3;
+    }
+
+    #footer-contactos a{
+        color: #f3f3f3;
+        font-size: 1rem;
+        text-decoration: none;
     }
 }
 /*****************************/
