@@ -2,9 +2,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-shadow: 0px 0px 1px black;
 }
 
 html, body {
@@ -14,7 +11,7 @@ html, body {
     overflow-y: scroll;
 }
 
-#hero, #acerca-de, #servicios, #blog, #contacto{
+#hero, #servicios, #blog, #contacto{
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
@@ -31,6 +28,11 @@ body{
     font-variation-settings:"wdth" 100;
 }
 
+#urbanology{
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
 /**********      HEADER       ********/
 header{
     background-color: #f3f3f3;
@@ -42,17 +44,8 @@ header{
 
 .header-container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
-}
-
-nav{
-    width: 30%;
-    justify-content: space-between;
-    align-items: end;
-    flex-direction: column;
-    display: none;
 }
 
 nav a:hover{
@@ -87,35 +80,17 @@ header a{
     display: none;
 }
 
-/************************************/
+/****************    HERO    ********************/
 
 #hero{
-    align-items: center;
-    font-size: 4rem;
-    background-color: #f3f3f3;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
-#urbanology{
-    font-size: 4rem;
-    margin: 0 auto;
-}
-
-#acerca-de{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 6rem 1rem 1rem 1rem;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
-#acercade::before{
-
-}
-
-#titulo{
+#titulo{                           /*   h1   */
     font-size: 2.7rem;
     margin: 0 auto;
 }
@@ -129,15 +104,17 @@ header a{
     font-size: 1rem;
     color: #1d1d1d;
     text-decoration: none;
-    margin-right: 2px;
+    font-weight: 500;
 }
+
+/***************        SERVICIOS       **************/
 
 #servicios{
     min-height: 100vh;
-    padding: 6rem 1rem 1rem 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .servicios-nav{
@@ -192,16 +169,24 @@ header a{
     align-items: center;
 }
 
-.card button:hover{
-
-}
-
 #blog{
     min-height: 100vh;
-    padding: 0 1rem;
+    padding: 6rem 1rem 1rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#blog a{
+    color: #1d1d1d;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.blog-content-container{
     display: flex;
     align-items: center;
-    
 }
 
 .blog-text-container{
@@ -305,23 +290,16 @@ footer a{
         display: none;
     }
 
-    nav{
-        display: flex;
-        flex-direction: row;
-        width: 40%;
-        align-items: center;
-    }
-  
 }
 
 /* ESTILOS DESKTOP */
 @media (min-width: 975px) {
     nav{
-        width: 30%;
-    }
-
-    #titulo{
-        /*max-width: 30%;*/
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
     }
 
     .card-container{
@@ -329,11 +307,15 @@ footer a{
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 15vh;
+    }
+
+    .card:hover {
+        background-color: #d9d9d9;
     }
 
     .card{
         width: 22%;
+        padding: 1rem;
     }
 
     .card span{

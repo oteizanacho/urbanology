@@ -46,8 +46,7 @@ let numServicio = 0
 
 const flechaizq = document.getElementById("izquierda")
 const flechader = document.getElementById("derecha")
-const tituloServicio = document.getElementById("titulo-servicio")
-const descripcionServicio = document.getElementById("desc-servicio")
+
 
 flechader.addEventListener("click", () => {
   numServicio === (servicios.length - 1) ? numServicio = 0 : numServicio += 1
@@ -95,4 +94,31 @@ blogFlechaIzq.addEventListener("click", () => {
   blogImagen.src = posteos[numBlog].imagen
   blogTitulo.innerText = posteos[numBlog].titulo
   blogTexto.innerText = posteos[numBlog].texto
+})
+
+const asesoriaElem = document.getElementById("asesorias")
+const factibilidadElem = document.getElementById("factibilidad")
+const anteproyectoElem = document.getElementById("anteproyecto")
+const activacionElem = document.getElementById("activacioncomercial")
+const tituloServicio = document.getElementById("titulo-servicio")
+const descripcionServicio = document.getElementById("desc-servicio")
+
+asesoriaElem.addEventListener("mouseenter", () => {
+  tituloServicio.innerText = servicios[0].titulo
+  descripcionServicio.innerText = servicios[0].descripcion
+})
+
+factibilidadElem.addEventListener("mouseenter", () => {
+  tituloServicio.innerText = servicios[1].titulo
+  descripcionServicio.innerText = servicios[1].descripcion
+})
+
+anteproyectoElem.addEventListener("mouseenter", () => {
+  tituloServicio.innerText = servicios[2].titulo
+  descripcionServicio.innerText = servicios[2].descripcion
+})
+
+activacionElem.addEventListener("mouseenter", () => {
+  tituloServicio.innerText = servicios[3].titulo
+  descripcionServicio.innerText = servicios[3].descripcion
 })
