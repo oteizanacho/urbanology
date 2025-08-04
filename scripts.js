@@ -25,19 +25,19 @@ navigation.forEach(nav => {
 
 const servicios = [
   {
-    titulo: "Asesorías.",
+    titulo: "Asesorías",
     descripcion: "Te ayudamos a tomar decisiones estratégicas en el mundo inmobiliario. Analizamos el valor, el contexto y las oportunidades del sitio para diseñar estrategias de inversión alineadas con tus objetivos. Nuestro enfoque combina conocimiento del mercado, visión urbana y análisis de potencialidades a corto y largo plazo."
   },
   {
-    titulo: "Factibilidad.",
+    titulo: "Factibilidad",
     descripcion: "Determinamos qué se puede construir y cómo hacerlo. Estudiamos la normativa vigente, los indicadores urbanísticos y las condiciones del terreno para definir usos posibles y programas arquitectónicos viables. Este diagnóstico técnico y legal es la base para avanzar con seguridad en tu proyecto."
   },
   {
-    titulo: "Ante-Proyecto.",
+    titulo: "Ante proyecto",
     descripcion: "Damos forma a la idea. Desarrollamos la propuesta arquitectónica inicial, con imágenes conceptuales, una memoria descriptiva y un pre-diseño que incluye aspectos de arquitectura e ingeniería. Este documento es clave para visualizar el proyecto, evaluar su viabilidad y comenzar gestiones técnicas o comerciales."
   },
   {
-    titulo: "Activación comercial.",
+    titulo: "Activación comercial",
     descripcion: "Transformamos el proyecto en un acontecimiento. Diseñamos planes de comunicación, estrategias de venta y acciones públicas que visibilicen el desarrollo y convoquen al entorno. Desde eventos urbanos hasta piezas de difusión, buscamos generar interés y valor desde el primer momento."
   }
 ]

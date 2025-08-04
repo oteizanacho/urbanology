@@ -90,37 +90,33 @@ header a{
     padding: 1rem;
 }
 
-#titulo{                           /*   h1   */
+.titulo{                           /*   h1   */
     font-size: 2.7rem;
     margin: 0 auto;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-.redes-container{
-    display: flex;
-    justify-content: flex-end;
-}
 
-.redes-container a{
-    font-size: 1rem;
-    color: #1d1d1d;
-    text-decoration: none;
-    font-weight: 500;
-}
 
 /***************        SERVICIOS       **************/
 
 #servicios{
     min-height: 100vh;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: #d9d9d9;
 }
 
 .servicios-nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f3f3f3;
+    padding: 1rem 0;
 }
 
 .servicios-nav div{
@@ -136,7 +132,14 @@ header a{
 
 .flecha{
     font-size: 2rem;
+    padding: 0.5rem 1rem;
 
+}
+
+.flecha:hover{
+    background-color: #1d1d1d;
+    color: #f3f3f3;
+    padding: 0.5rem 1rem;
 }
 
 .blog-card{
@@ -150,32 +153,25 @@ header a{
     width: 49%;
     height: 55vh;
     object-fit: fill;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
 }
 
-.card button{
-    border: none;
-    padding: 0.3rem 0.5rem;
-    background-color: #1d1d1d;
-    color: #f3f3f3;
-    margin-top: 0.5rem;
-    border-radius: 1rem;
-}
-
-.card div{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    align-items: center;
-}
 
 #blog{
     min-height: 100vh;
-    padding: 6rem 1rem 1rem 1rem;
+    padding-top: 5rem;
     display: flex;
-    align-items: flex-end;
+    background-color: #d9d9d9;
     justify-content: space-between;
     flex-direction: column;
+}
+
+#blog h2{
+    display: flex;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 1rem 0 1rem 1rem;
 }
 
 #blog a{
@@ -187,10 +183,13 @@ header a{
 .blog-content-container{
     display: flex;
     align-items: center;
+    background-color: #f3f3f3;
+    padding: 0 1rem ;
 }
 
 .blog-text-container{
     width: 40%;
+    padding: 1rem;
 }
 
 .blog-text-container h2{
@@ -199,7 +198,7 @@ header a{
 }
 
 .blog-text-container p{
-    padding: 0 1rem 1rem 1rem;
+    padding: 1rem;
     background-color: #d9d9d9;
 }
 
@@ -210,14 +209,22 @@ header a{
     margin-left: 1rem;
 }
 
+.redes{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: #f3f3f3;
+    padding-top: 1rem;
+}
+
 #contacto{
     min-height: 100vh;
-    padding: 6rem 1rem 1rem 1rem;
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color: #d9d9d9;
 }
 
 #contacto span{
@@ -228,6 +235,7 @@ header a{
     font-size: 1.9rem;
     text-align: center;
     font-weight: 600;
+    padding: 1rem 0;
 }
 
 #contacto h4{
@@ -240,10 +248,13 @@ header a{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    background-color: #f3f3f3;
+    padding: 1rem 0;
 }
 
 form{
     width: 40%;
+    padding: 1rem 0;
 }
 
 form button{
@@ -307,6 +318,8 @@ footer a{
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: space-between;
+        background-color: #f3f3f3;
+        padding: 1rem;
     }
 
     .card:hover {
@@ -318,6 +331,12 @@ footer a{
         padding: 1rem;
     }
 
+    .card div{
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
     .card span{
         font-size: 2rem;
     }
@@ -327,6 +346,8 @@ footer a{
         width: 100%;
         justify-content: space-between;
         text-align: center;
+        background-color: #f3f3f3;
+        padding-top: 1rem;
     }
 }
 /*****************************/
