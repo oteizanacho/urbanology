@@ -125,6 +125,7 @@ header a{
     background-color: #F4F3EE;
     padding: 1rem;
     margin: 1rem;
+    border-radius: 1rem;
 }
 /*
 #titulo-servicio{
@@ -334,11 +335,12 @@ footer a{
         padding: 1rem;
         background-color: #F4F3EE;
         margin: 1rem;
+        border-radius: 1rem;
     }
 
     .card div{
         display: flex;
-        justify-content: space-around;
+        gap: 1rem;
        /* gap: 1rem;
         padding: 1rem;
         margin: 1rem 1rem 0 1rem;*/
