@@ -32,7 +32,7 @@ html, body {
 /**********      HEADER       ********/
 header{
     background-color: #f3f3f3;
-    padding: 1rem;
+    padding: 0.5rem;
     width: 100%;
     box-shadow: 0 0px 3px #1d1d1d;
     position: fixed;
@@ -91,7 +91,7 @@ header a{
     margin: 0 auto;
     background-color: #f3f3f3;
     width: 100%;
-    padding: 6rem 0 1rem 0;
+    padding: 4.5rem 0 0.5rem 0;
     text-align: center;
 }
 
@@ -112,28 +112,28 @@ header a{
     align-items: center;
     justify-content: center;
     background-color: #39304A;
-    padding: 1rem 0;
+    /*padding: 1rem 0;*/
     gap: 1rem;
 }
-
+/*
 #desc-servicio{
     margin: 0 1rem 1rem 1rem;
 }
-
+*/
 .servicios-nav div{
-    width: 70%;
+    width: 60%;
     background-color: #F4F3EE;
     padding: 1rem;
     margin: 1rem;
 }
-
+/*
 #titulo-servicio{
     margin: 1rem;
 }
-
+*/
 .flecha{
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.6rem;
     background-color: #F4F3EE;
     border: 1px solid #F4F3EE;
     border-radius: 2rem;
@@ -142,14 +142,14 @@ header a{
 .flecha:hover{
     background-color: #202030;
     color: #f3f3f3;
-    padding: 0.5rem 1rem;
+    /*padding: 0.5rem 1rem;*/
     border: 1px solid #F4F3EE;
 }
 
 .blog-card{
     display: flex;
-    gap: 1rem;
-    padding: 1rem 0;
+    /*gap: 1rem;*/
+    /*padding: 1rem 0;*/
     justify-content: center;
 }
 
@@ -175,7 +175,7 @@ header a{
     display: flex;
     width: 100%;
     background-color: #f3f3f3;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
 }
 
 .redes a{
@@ -192,7 +192,7 @@ header a{
 }
 
 .blog-text-container{
-    width: 40%;
+    width: 49%;
     padding: 1rem;
 }
 
@@ -218,7 +218,7 @@ header a{
     width: 100%;
     justify-content: flex-end;
     background-color: #f3f3f3;
-    padding-top: 1rem;
+    padding: 0.2rem;
 }
 
 #contacto{
@@ -311,7 +311,7 @@ footer a{
 /* ESTILOS DESKTOP */
 @media (min-width: 975px) {
     nav{
-        width: 20%;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -320,9 +320,9 @@ footer a{
 
     .card-container{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         background-color: #39304A;
-        padding: 1rem 2rem;
+        /*padding: 1rem 2rem;*/
     }
 
     .card:hover {
@@ -330,7 +330,7 @@ footer a{
     }
 
     .card{
-        width: 22%;
+        max-width: 20%;
         padding: 1rem;
         background-color: #F4F3EE;
         margin: 1rem;
@@ -338,16 +338,17 @@ footer a{
 
     .card div{
         display: flex;
-        gap: 1rem;
+        justify-content: space-around;
+       /* gap: 1rem;
         padding: 1rem;
-        margin: 1rem 1rem 0 1rem;
+        margin: 1rem 1rem 0 1rem;*/
     }
-
+/*
     .card p{
         padding: 1rem;
         margin: 0 1rem 1rem 1rem;
     }
-
+*/
     .card span{
         font-size: 2rem;
     }
