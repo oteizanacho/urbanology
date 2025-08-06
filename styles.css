@@ -23,61 +23,53 @@ html, body {
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
+/******************************************************************************************/
 
-#urbanology{
-    font-size: 4rem;
-    margin: 0 auto;
-}
-
-/**********      HEADER       ********/
+/************************************      HEADER       **********************************/
 header{
     background-color: #f3f3f3;
-    padding: 0.5rem;
-    width: 100%;
+    padding: 0.5rem;            
+    width: 100%;                
     box-shadow: 0 0px 3px #1d1d1d;
-    position: fixed;
-}
-
-.header-container{
-    display: flex;
+    position: fixed;          
+}                              
+                                
+.header-container{                   
+    display: flex;                     
+    justify-content: space-between;          
+    width: 100%;                         
+    align-items: center;                    
+}                                       
+                                       
+nav{                                
+    width: 50%;                          
+    display: flex;                       
     justify-content: space-between;
-    width: 100%;
-}
+    font-weight: 600;        
+}                                          
+                                         
+nav a{                                  
+    padding: 0.3rem;                   
+}                                      
+                                     
+nav a:hover{                           
+    background-color: #202030;          
+    color: #f3f3f3;                  
+    border: none;                 
+}                                 
+                                    
+header a{                             
+    text-decoration: none;          
+    color: #1d1d1d;            
+}                                 
+                              
+#home{                        
+    font-size: 1.4rem;          
+}                              
+/***************************************************************************************/
 
-nav a:hover{
-    background-color: #202030;
-    color: #f3f3f3;
-    padding: 0.5rem 1rem;
-    border: none;
-}
 
-header a{
-    text-decoration: none;
-    color: #1d1d1d;
-    padding: 0.5rem 1rem;
-}
-
-#home{
-    font-size: 1.4rem;
-}
-
-#hamburguesa{
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 1.6rem;
-}
-
-#cerrar{
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 1.6rem;
-    display: none;
-}
-
-/****************    HERO    ********************/
-
+/******************************************    HERO    **********************************************/
 #hero{
     min-height: 100vh;
     display: flex;
@@ -86,18 +78,28 @@ header a{
     background-color: #F4F3EE;
 }
 
-.titulo{                           /*   h1   */
-    font-size: 2.7rem;
+#urbanology{
+    font-size: 4rem;
     margin: 0 auto;
-    background-color: #f3f3f3;
-    width: 100%;
-    padding: 4.5rem 0 0.5rem 0;
-    text-align: center;
 }
 
+.titulo{                           
+    font-size: 2.7rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+/***************************************************************************************/
 
 
-/***************        SERVICIOS       **************/
+
+/*****************************************        SERVICIOS       ****************************************/
+
+#servicios .titulo{
+    padding: 4rem 0.3rem 0.3rem 0.3rem;
+    color: #f3f3f3;
+    background-color: #39304A;
+}
 
 #servicios{
     min-height: 100vh;
@@ -112,56 +114,71 @@ header a{
     align-items: center;
     justify-content: center;
     background-color: #39304A;
-    /*padding: 1rem 0;*/
+    padding: 0 1rem;
+}
+
+.card-container{
+    display: flex;
+    background-color: #39304A;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.card{
+    background-color: #F4F3EE;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    max-width: 70%;
+}
+
+.card:hover {
+        background-color: #f3f3f3;
+}
+
+.card div{
+    display: flex;
     gap: 1rem;
 }
-/*
-#desc-servicio{
-    margin: 0 1rem 1rem 1rem;
+
+.card span{
+    font-size: 1.5rem;
 }
-*/
+
 .servicios-nav div{
-    width: 46%;
     background-color: #F4F3EE;
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
 }
-/*
-#titulo-servicio{
-    margin: 1rem;
-}
-*/
+
 .flecha{
     font-size: 1.5rem;
     padding: 0.2rem 0.6rem;
     background-color: #F4F3EE;
-    /*border: 1px solid #F4F3EE;*/
     border-radius: 2rem;
 }
 
 .flecha:hover{
     background-color: #202030;
     color: #f3f3f3;
-    /*padding: 0.5rem 1rem;*/
-    /*border: 1px solid #F4F3EE;*/
 }
+/**********************************************************************************************************/
 
+
+/*******************************        BLOG        **************************************/
 .blog-card{
     display: flex;
-    /*gap: 1rem;*/
-    /*padding: 1rem 0;*/
     justify-content: center;
+    flex-direction: column;
 }
 
 .blog-img{
-    width: 49%;
-    height: 55vh;
-    object-fit: fill;
+    width: 100%;
     border-radius: 2rem;
     padding: 1rem;
 }
-
 
 #blog{
     min-height: 100vh;
@@ -173,10 +190,8 @@ header a{
 }
 
 #blog h2{
-    display: flex;
-    width: 100%;
     background-color: #202030;
-    padding: 1rem;
+    padding: 0.3rem;
     color: #f3f3f3;
 }
 
@@ -195,7 +210,6 @@ header a{
 }
 
 .blog-text-container{
-    width: 49%;
     padding: 1rem;
 }
 
@@ -227,7 +241,9 @@ header a{
 #blog .redes{
     background-color: #202030;
 }
+/**********************************************************************************************************/
 
+/*******************************       FOOTER             ***************************************/
 #contacto{
     min-height: 100vh;
     padding-top: 6rem;
@@ -259,14 +275,13 @@ header a{
 .form-container{
     display: flex;
     width: 100%;
-    justify-content: space-around;
     background-color: #39304A;
     padding: 1rem 0;
+    flex-direction: column;
 }
 
 form{
-    width: 40%;
-    padding: 1rem 0;
+    padding: 0 1rem;
 }
 
 form button{
@@ -304,18 +319,56 @@ input{
     margin-bottom: 1rem;
 }
 
-footer a{
-    color: #1d1d1d;
-    font-size: 1rem;
-    text-decoration: none;
+#footer-contactos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+    padding: 0.3rem;
+    width: 100%;
+    background-color: #39304A;
 }
 
-/******** MEDIA QUERIS ************/
+#footer-contactos div{
+    display: flex;
+}
+
+footer a{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+/**********************************************************************************************************/
+
+
+/******************************************** MEDIA QUERIS ************************************************/
 
 /* ESTILOS TABLET */
 @media (min-width: 787px) {
-    #hamburguesa{
-        display: none;
+
+    header a{
+        padding: 0.5rem 1rem;
+    }
+
+    nav a:hover{
+    background-color: #202030;
+    color: #f3f3f3;
+}
+    .card-container{
+       
+        justify-content: center;
+    }
+
+    .blog-card{
+        align-items: center;
+    }
+
+    .blog-img{
+        width: 90%;
+    }
+
+    #footer-contactos{
+        flex-direction: row;
+        justify-content: space-between;
     }
 
 }
@@ -323,47 +376,35 @@ footer a{
 /* ESTILOS DESKTOP */
 @media (min-width: 975px) {
     nav{
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 600;
+        width: 30%;
     }
 
     .card-container{
         display: flex;
         justify-content: space-evenly;
         background-color: #39304A;
-        /*padding: 1rem 2rem;*/
-    }
-
-    .card:hover {
-        background-color: #F4F3EE;
     }
 
     .card{
-        max-width: 16%;
-        padding: 1rem;
-        background-color: #F4F3EE;
-        margin: 1rem;
-        border-radius: 1rem;
+        max-width: 20%;
     }
 
-    .card div{
-        display: flex;
-        gap: 1rem;
-       /* gap: 1rem;
-        padding: 1rem;
-        margin: 1rem 1rem 0 1rem;*/
+    .servicios-nav div{
+        max-width: 60%;
     }
-/*
-    .card p{
-        padding: 1rem;
-        margin: 0 1rem 1rem 1rem;
+
+    .blog-card{
+        flex-direction: row;
     }
-*/
-    .card span{
-        font-size: 2rem;
+
+    .blog-img{
+        width: 50%;
+    }
+
+    .form-container{
+        flex-direction: row;
+        padding: 1rem;
+        justify-content: space-evenly;
     }
 
     #footer-contactos{
@@ -382,4 +423,15 @@ footer a{
         text-decoration: none;
     }
 }
+
+@media (min-width: 1400px){
+    .card{
+        max-width: 16%;
+    }
+
+    .servicios-nav div{
+        max-width: 50%;
+    }
+}
+
 /*****************************/
