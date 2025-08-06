@@ -395,6 +395,7 @@ footer a{
 
     .blog-card{
         flex-direction: row;
+        align-items: start;
     }
 
     .blog-img{
